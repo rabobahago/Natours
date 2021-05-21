@@ -97,3 +97,25 @@ body {
     transform: translate(0);
   }
 }
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 130px 10px 10px 10px;
+  padding: 8px 23px;
+  border-radius: 18px;
+  color: #b8b2b2;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.btn--white {
+  background: #fff;
+  text-decoration: none;
+}
+.btn--animated:hover {
+  background-color: green;
+  cursor: pointer;
+}
