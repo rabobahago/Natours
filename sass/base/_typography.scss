@@ -1,13 +1,15 @@
 .heading-primary {
+  color: $color-white;
   text-transform: uppercase;
-  color: #fff;
+
   backface-visibility: hidden;
   margin-bottom: 6rem;
+
   &--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 0.1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -40,12 +42,24 @@ body {
     $color-primary-light,
     $color-primary-dark
   );
+  color: transparent;
   transition: all 0.2s;
   -webkit-background-clip: text;
   letter-spacing: 0.2rem;
-  color: transparent;
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgbq($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: $default-font;
+  &:not(last-child) {
+    margin-bottom: 3rem;
   }
 }
